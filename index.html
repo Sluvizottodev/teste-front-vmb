@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neoclássico</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
@@ -18,7 +19,7 @@
 
     <main>
         <section id="hero" class="hero">
-            <img src="img/hero.jpg" alt="Imagem de destaque, banner principal">
+            <img src="assets/hero.png" alt="Imagem de destaque, banner principal contedo imagem de uma sala de estar com móveis de design clássico">
         </section>
 
         <section id="beneficios" class="beneficios">
@@ -35,6 +36,26 @@
                 <p>Acumule pontos e troque por benefícios</p>
             </div>
         </section>
+
+        <section id="novidades" class="produtos">
+            <h2>Novidades</h2>
+            <ul id="lista-novidades" class="lista-produtos"></ul>
+        </section>
+
+        <section id="mais-vendidos" class="produtos">
+            <h2>Mais Vendidos</h2>
+            <ul id="lista-mais-vendidos" class="lista-produtos"></ul>
+        </section>
+
+        <section id="novo-classico" class="novo-classico">
+            <img src="assets/new-classic.png" alt="Sala de estar bem decorada com móveis de design clássico">
+        </section>
+
+        <section id="colecao" class="produtos">
+            <h2>Coleção</h2>
+            <ul id="lista-colecao" class="lista-produtos"></ul>
+        </section>
+
     </main>
 
     <footer>
@@ -48,12 +69,14 @@
                 </form>
             </div>
             <div class="extra">
-                <div class="redes sociais"></div>
-                <div class
+                <div class="redes-sociais"></div>
+                <div class="links"></div>
             </div>
         </div>
         <p>&copy; 2025 Neoclássico.</p>
     </footer>
 
+    <script src="js/api.js"></script>
+    <script src="js/renderizarProdutos.js"></script>
 </body>
 </html>
