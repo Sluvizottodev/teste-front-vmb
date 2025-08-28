@@ -1,0 +1,76 @@
+header .info {
+    background-color: var(--cor-primaria);
+    color: var(--texto-claro);
+    text-align: center;
+    padding: 0.25rem;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.03rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    background: var(--texto-claro);
+    position: relative;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.logo img {
+    max-height: 6rem;
+    width: auto;
+}
+
+.icons {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    gap: 0.8rem;
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+}
+
+.icons a {
+    color: var(--cor-primaria);
+    transition: color 0.2s;
+}
+
+.icons a:hover {
+    color: #3d7ea6;
+}
+
+.menu {
+    background: var(--texto-claro);
+    text-align: center;
+    padding: 0.25rem 0;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li a {
+    color: var(--texto-escuro);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase; 
+    text-decoration: none; 
+    transition: color 0.2s;
+}
+
+.menu ul li a:hover {
+    color: var(--cor-primaria);
+}
