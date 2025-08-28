@@ -165,38 +165,28 @@
     }
 }
 
-/* botão só no mobile */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: var(--cor-primaria);
-  cursor: pointer;
-}
-
 @media (max-width: 768px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-    background: var(--texto-claro);
-    width: 100%;
-    text-align: left;
-    padding: 1rem;
-  }
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: var(--texto-claro);
+        width: 100%;
+        text-align: left;
+        padding: 1rem;
+    }
 
-  .menu.show {
-    display: flex; 
-  }
+    menu.show {
+        display: flex; 
+    }
 
-  .menu ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
+    .menu ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
 
-  .menu-toggle {
-    display: block; 
-  }
+    .menu-toggle {
+        display: block; 
+    }
 }
 
 .menu-toggle{display:none;background:none;border:0;font-size:1.8rem;line-height:1;color:var(--cor-primaria);cursor:pointer}
@@ -268,15 +258,14 @@
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         padding-bottom: 1rem;
-        -webkit-overflow-scrolling: touch; /* rolagem suave no iOS */
-    }
-
-    /* Ocultar barra de rolagem no Webkit (Chrome, Safari) */
+        -webkit-overflow-scrolling: touch; 
+}
+    /* oculta rolagem no Chrome, Safari */
     .lista-produtos::-webkit-scrollbar {
         display: none;
     }
 
-    /* Ocultar barra de rolagem no Firefox */
+    /* oculta rolagem no Firefox */
     .lista-produtos {
         scrollbar-width: none;
     }
