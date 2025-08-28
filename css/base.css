@@ -1,0 +1,32 @@
+:root {
+    --cor-primaria: #61A9CC;
+    --texto-escuro: #686868;
+    --texto-claro: #FFFFFF;
+    --fonte-sans: 'Hedvig Letters Sans', sans-serif;
+    --fonte-serif: 'Hedvig Letters Serif', serif;
+}
+
+body {
+    background-color: var(--texto-claro);
+    font-family: var(--fonte-sans);
+    color: var(--texto-escuro);
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fonte-serif);
+    margin: 0.5rem 0;
+    line-height: 1.2;
+    color: var(--cor-primaria);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
