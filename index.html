@@ -6,7 +6,6 @@
     <title>Neoclássico</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
@@ -17,6 +16,9 @@
         </div>
 
         <div class="navbar">
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class="bi bi-list"></i>
+            </button>
             <div class="logo">
                 <img src="assets/logo.png" alt="Logo da Neoclássico, loja de móveis de design clássico">
             </div>
@@ -31,10 +33,14 @@
 
         <nav class="menu">
             <ul>
-                <li><a href="#">Sofás</a></li>
-                <li><a href="#">Poltronas</a></li>
-                <li><a href="#">Mesas</a></li>
-                <li><a href="#">Quadros</a></li>
+                <li><a href="#">quadros</a></li>
+                <li><a href="#">luminárias</a></li>
+                <li><a href="#">almofadas</a></li>
+                <li><a href="#">mesas de centro</a></li>
+                <li><a href="#">mantas</a></li>
+                <li><a href="#">objetos decorativos</a></li>
+                <li><a href="#">coleções</a></li>
+                <li><a href="#">rastreio de pedidos</a></li>
             </ul>
         </nav>
     </header>
@@ -81,7 +87,18 @@
         </section>
 
         <section id="novo-classico" class="novo-classico">
-            <img src="assets/new-classic.png" alt="Sala de estar bem decorada com móveis de design clássico">
+            <div class="novo-classico-container">
+                <div class="novo-classico-img-wrapper">
+                <img src="assets/new-classic.png" alt="Ambiente neoclássico" class="novo-classico-img">
+                </div>
+                <div class="novo-classico-texto">
+                <h2>Novo Clássico</h2>
+                <p>
+                    Na neoclássico, reinventamos a elegância atemporal com um toque contemporâneo. Nossa curadoria de objetos de decoração combina sofisticação e design para transformar qualquer ambiente. De mesas de centro a luminárias de chão, cada peça reflete um equilíbrio entre tradição e modernidade. Descubra o novo clássico e deixe sua casa contar a sua história.
+                </p>
+                <button class="btn-novo-classico">Explorar</button>
+                </div>
+            </div>
         </section>
 
         <section id="colecao" class="produtos">
@@ -93,24 +110,51 @@
 
    <!-------------------------------------------- FOOTER ------------------------------------------------>
     <footer>
-        <div class="footer-content">
-            <div class="newletter">
-                <h3>Receba nossas novidades!</h3>
-                <p>Cadastre-se na nossa Newletter</p>
-                <form>
-                    <input type="nome" placeholder="Digite seu nome">
-                    <input type="email" placeholder="Digite seu email">
-                </form>
+    <div class="footer-content">
+       
+        <div class="newsletter">
+            <h3>Receba nossas novidades!</h3>
+            <p>Cadastre-se na nossa newsletter</p>
+            <form>
+                <input type="text" placeholder="Digite seu nome" name="nome">
+                <input type="email" placeholder="Digite seu email" name="email">
+                <button type="submit" class="btn-footer">Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="footer-links">
+            <div class="links">
+                <h4>Atendimento</h4>
+                <ul>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Trocas & Devoluções</a></li>
+                    <li><a href="#">Perguntas Frequentes</a></li>
+                </ul>
             </div>
-            <div class="extra">
-                <div class="redes-sociais"></div>
-                <div class="links"></div>
+            <div class="links">
+                <h4>Institucional</h4>
+                <ul>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Entregas</a></li>
+                </ul>
+            </div>
+            <div class="redes-sociais">
+                <h4>Siga nas redes</h4>
+                <div class="footer-social-icons">
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                </div>
             </div>
         </div>
-        <p>&copy; 2025 Neoclássico.</p>
-    </footer>
+    </div>
+    <p class="footer-copy">&copy; 2025 Neoclássico.</p>
+</footer>
+
 
     <script src="js/api.js"></script>
     <script src="js/renderizarProdutos.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
