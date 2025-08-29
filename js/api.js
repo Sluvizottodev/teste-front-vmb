@@ -24,3 +24,5 @@ async function fetchProdutos(){
         });
     }
 }
+
+document.addEventListener("DOMContentLoaded", fetchProdutos);

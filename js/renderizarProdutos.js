@@ -25,4 +25,4 @@ function renderProdutos(containerId, produtos) {
     });
 }
 
-fetchProdutos();
+module.exports = { renderProdutos };
