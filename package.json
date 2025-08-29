@@ -1,0 +1,23 @@
+{
+  "name": "teste-vamboracoder-front",
+  "version": "1.0.0",
+  "description": "Repositório do teste de seleção para **Estágio em Desenvolvimento** na **Vambora Coders**.  \r O objetivo deste teste é avaliar **lógica, organização, criatividade** e a capacidade de escrever **código limpo e escalável**.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "jest": "^30.1.1",
+    "jest-environment-jsdom": "^30.1.1"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-jsdom"
+  }
+}
