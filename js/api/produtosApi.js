@@ -1,15 +1,18 @@
+import { renderProdutos } from "../utils/renderProdutos.js";
+
+
 const API_URL = "https://fakestoreapi.com/products";
 
-async function fetchProdutos(){
-    try{
+export async function fetchProdutos() {
+    try {
         const response = await fetch(API_URL);
-        if(!response.ok){
-            throw new Error("Erro ao buscar produtos: ${response.status}");
+        if (!response.ok) {
+            throw new Error(`Erro ao buscar produtos: ${response.status}`);
         }
         const produtos = await response.json();
 
-        const novidades = produtos.slice(0, 4); 
-        const maisVendidos = produtos.slice(4, 8); 
+        const novidades = produtos.slice(0, 4);
+        const maisVendidos = produtos.slice(4, 8);
         const colecao = produtos.slice(8, 12);
 
         renderProdutos("lista-novidades", novidades);
@@ -24,5 +27,3 @@ async function fetchProdutos(){
         });
     }
 }
-
-document.addEventListener("DOMContentLoaded", fetchProdutos);

@@ -1,4 +1,4 @@
-const { renderProdutos } = require("../js/renderizarProdutos.js");
+const { renderProdutos } = require("../js/utils/renderProdutos.js");
 
 describe("renderProdutos", () => {
     let container;
