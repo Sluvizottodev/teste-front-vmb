@@ -2,6 +2,10 @@ main{
     margin-top: 20px;
 }
 
+main h1{
+    font-weight: 500;
+}
+
 .hero img {
     width: 100%;
     height: auto;
@@ -146,7 +150,6 @@ main{
     font-size: 2rem;
     margin: 0 0 0.8rem 0;
     font-family: var(--fonte-serif);
-    font-weight: bold;
     background: none;
     padding: 0;
     text-align: left; 
