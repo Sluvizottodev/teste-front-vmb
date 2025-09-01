@@ -1,178 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Neoclássico</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <!-------------------------------------------- HEADER ------------------------------------------------>
-        <header>
-            <div class="info">
-                <p>GANHE PONTOS EM COMPRAS ACIMA DE R$ 100,00 E TROQUE POR BENEFÍCIOS EXCLUSIVOS</p>
+    <meta name="description"
+        content="Neoclássico - Móveis e decoração com design atemporal. Descubra nossa coleção de quadros, luminárias, almofadas e objetos decorativos.">
+    <meta name="keywords"
+        content="móveis, decoração, design, neoclássico, quadros, luminárias, almofadas, mesas de centro">
+    <title>Neoclássico - Móveis e Decoração com Design Atemporal</title>
+
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="assets/hero.png" as="image" media="(min-width: 601px)">
+    <link rel="preload" href="assets/logo.png" as="image">
+</head>
+
+<body>
+    <!-------------------------------------------- HEADER ------------------------------------------------>
+    <header>
+        <div class="info">
+            <p>GANHE PONTOS EM COMPRAS ACIMA DE R$ 100,00 E TROQUE POR BENEFÍCIOS EXCLUSIVOS</p>
+        </div>
+        <!--O que perdi em acessibilidade foi por conta de não colocar texto descritivo ao lado dos ícones e o contraste de letras com o fundo, de resto deu 91%-->
+        <div class="navbar">
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo da Neoclássico, loja de móveis de design clássico">
             </div>
 
-            <div class="navbar">
-                <button class="menu-toggle" aria-label="Abrir menu">
-                    <i class="bi bi-list"></i>
-                </button>
-                <div class="logo">
-                    <img src="assets/logo.png" alt="Logo da Neoclássico, loja de móveis de design clássico">
-                </div>
+            <div class="icons">
+                <a href="#" aria-label="Buscar"><i class="bi bi-search"></i></a>
+                <a href="#" aria-label="Favoritos"><i class="bi bi-heart"></i></a>
+                <a href="#" aria-label="Perfil"><i class="bi bi-person"></i></a>
+                <a href="#" aria-label="Carrinho"><i class="bi bi-cart"></i></a>
+            </div>
+        </div>
 
-                <div class="icons">
-                    <a href="#" aria-label="Buscar"><i class="bi bi-search"></i></a>
-                    <a href="#" aria-label="Favoritos"><i class="bi bi-heart"></i></a>
-                    <a href="#" aria-label="Perfil"><i class="bi bi-person"></i></a>
-                    <a href="#" aria-label="Carrinho"><i class="bi bi-cart"></i></a>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">quadros</a></li>
+                <li><a href="#">luminárias</a></li>
+                <li><a href="#">almofadas</a></li>
+                <li><a href="#">mesas de centro</a></li>
+                <li><a href="#">mantas</a></li>
+                <li><a href="#">objetos decorativos</a></li>
+                <li><a href="#">coleções</a></li>
+                <li><a href="#">rastreio de pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-------------------------------------------- MAIN ------------------------------------------------>
+    <main role="main">
+        <section id="hero" class="hero">
+            <img src="assets/hero.png"
+                alt="Destaque: banner principal contendo uma sala de estar com móveis de design clássico">
+        </section>
+
+        <section id="beneficios" class="beneficios">
+            <div class="beneficio">
+                <i class="bi bi-credit-card"></i>
+                <div>
+                    <h3>Parcelamento</h3>
+                    <p>Compre em até 12x sem juros</p>
                 </div>
             </div>
-
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">quadros</a></li>
-                    <li><a href="#">luminárias</a></li>
-                    <li><a href="#">almofadas</a></li>
-                    <li><a href="#">mesas de centro</a></li>
-                    <li><a href="#">mantas</a></li>
-                    <li><a href="#">objetos decorativos</a></li>
-                    <li><a href="#">coleções</a></li>
-                    <li><a href="#">rastreio de pedidos</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-------------------------------------------- MAIN ------------------------------------------------>
-        <main>
-            <section id="hero" class="hero">
-                <img src="assets/hero.png"
-                    alt="Destaque: banner principal contendo uma sala de estar com móveis de design clássico">
-            </section>
-
-            <section id="beneficios" class="beneficios">
-                <div class="beneficio">
-                    <i class="bi bi-credit-card"></i>
-                    <div>
-                        <h3>Parcelamento</h3>
-                        <p>Compre em até 12x sem juros</p>
-                    </div>
+            <div class="beneficio">
+                <i class="bi bi-cash-coin"></i>
+                <div>
+                    <h3>Desconto no Pix</h3>
+                    <p>Ganhe 10% de desconto pagando via Pix</p>
                 </div>
-                <div class="beneficio">
-                    <i class="bi bi-cash-coin"></i>
-                    <div>
-                        <h3>Desconto no Pix</h3>
-                        <p>Ganhe 10% de desconto pagando via Pix</p>
-                    </div>
+            </div>
+            <div class="beneficio">
+                <i class="bi bi-stars"></i>
+                <div>
+                    <h3>Programa de Pontos</h3>
+                    <p>Acumule pontos e troque por benefícios</p>
                 </div>
-                <div class="beneficio">
-                    <i class="bi bi-stars"></i>
-                    <div>
-                        <h3>Programa de Pontos</h3>
-                        <p>Acumule pontos e troque por benefícios</p>
-                    </div>
+            </div>
+        </section>
+
+
+        <section id="novidades" class="produtos">
+            <h1>Novidades</h1>
+            <ul id="lista-novidades" class="lista-produtos"></ul>
+        </section>
+
+        <section id="mais-vendidos" class="produtos">
+            <h1>Mais Vendidos</h1>
+            <ul id="lista-mais-vendidos" class="lista-produtos"></ul>
+        </section>
+
+        <section id="novo-classico" class="novo-classico">
+            <div class="novo-classico-container">
+                <div class="novo-classico-img-wrapper">
+                    <img src="assets/new-classic.png" alt="Ambiente neoclássico" class="novo-classico-img">
                 </div>
-            </section>
-
-
-            <section id="novidades" class="produtos">
-                <h2>Novidades</h2>
-                <ul id="lista-novidades" class="lista-produtos"></ul>
-            </section>
-
-            <section id="mais-vendidos" class="produtos">
-                <h2>Mais Vendidos</h2>
-                <ul id="lista-mais-vendidos" class="lista-produtos"></ul>
-            </section>
-
-            <section id="novo-classico" class="novo-classico">
-                <div class="novo-classico-container">
-                    <div class="novo-classico-img-wrapper">
-                        <img src="assets/new-classic.png" alt="Ambiente neoclássico" class="novo-classico-img">
-                    </div>
-                    <div class="novo-classico-texto">
-                        <h2>Novo Clássico</h2>
-                        <p>
-                            Na neoclássico, reinventamos a elegância atemporal com um toque contemporâneo. Nossa curadoria
-                            de objetos de decoração combina sofisticação e design para transformar qualquer ambiente. De
-                            mesas de centro a luminárias de chão, cada peça reflete um equilíbrio entre tradição e
-                            modernidade. Descubra o novo clássico e deixe sua casa contar a sua história.
-                        </p>
-                        <button class="btn-novo-classico">Explorar</button>
-                    </div>
+                <div class="novo-classico-texto">
+                    <h1>Novo Clássico</h1>
+                    <p>
+                        Na neoclássico, reinventamos a elegância atemporal com um toque contemporâneo. Nossa curadoria
+                        de objetos de decoração combina sofisticação e design para transformar qualquer ambiente. De
+                        mesas de centro a luminárias de chão, cada peça reflete um equilíbrio entre tradição e
+                        modernidade. Descubra o novo clássico e deixe sua casa contar a sua história.
+                    </p>
+                    <button class="btn-novo-classico">Explore</button>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="colecao" class="produtos">
-                <h2>Coleção</h2>
-                <ul id="lista-colecao" class="lista-produtos"></ul>
-            </section>
+        <section id="colecao" class="produtos">
+            <h1>Coleção Camadas</h1>
+            <ul id="lista-colecao" class="lista-produtos"></ul>
+        </section>
 
-        </main>
+    </main>
 
-        <!-------------------------------------------- FOOTER ------------------------------------------------>
-        <footer>
-            <div class="newsletter">
-                <h3>RECEBA NOSSAS NOVIDADES</h3>
-                <p>Cadastre-se na nossa newsletter</p>
+    <!-------------------------------------------- FOOTER ------------------------------------------------>
+    <footer>
+        <div class="newsletter">
+            <div class="newsletter-inner">
+                <div class="nl-title">
+                    <h3>RECEBA NOSSAS NOVIDADES</h3>
+                    <p>cadastre-se na nossa newsletter</p>
+                </div>
                 <form>
                     <input type="text" placeholder="Digite seu nome" name="nome">
                     <input type="email" placeholder="Digite seu email" name="email">
-                    <button type="submit" class="btn-footer">Cadastrar</button>
+                    <button type="submit" class="btn-footer">Cadastre-se</button>
                 </form>
             </div>
-            <hr>
+        </div>
 
-            <div class="footer-content">
+        <hr>
 
-                <div class="footer-col brand">
-                    <img src="assets/logo.png" alt="Logo da Neoclássico">
-                    <p>
-                        Na Neoclássico, combinamos design atemporal e sofisticação para transformar espaços. Descubra o novo
-                        clássico.
-                    </p>
-                    <div class="footer-social-icons">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-whatsapp"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Sobre nós</h4>
-                    <ul>
-                        <li><a href="#">Nossa História</a></li>
-                        <li><a href="#">Curadoria Exclusiva</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Contato</h4>
-                    <ul>
-                        <li><a href="#">Fale Conosco</a></li>
-                        <li><a href="#">Trabalhe Conosco</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Atendimento</h4>
-                    <p>Segunda a sexta das 9h às 18h<br>Sábado das 9h às 13h</p>
-                    <p>WhatsApp: +55 (11) 00000-0000<br>E-mail: contato@neoclassico.com.br</p>
-                </div>
-
-                <div class="footer-col-pagamento">
-                    <h4>Meios de pagamento</h4>
-                    <img src="assets/formas-pagamento.png" alt="Meios de pagamento aceitos">
+        <!-- sistema de Abas no mobile -->
+        <div class="footer-mobile-accordion">
+            <div class="footer-accordion-item">
+                <div class="footer-accordion-header">Atendimento</div>
+                <div class="footer-accordion-content">
+                    <p>Segunda a sexta das 8h às 18h<br>e sábado das 8h às 15h</p>
                 </div>
             </div>
-            <hr>
 
-            <p class="footer-copy">&copy; 2025 Neoclássico.</p>
-        </footer>
+            <div class="footer-accordion-item">
+                <div class="footer-accordion-header">Institucional</div>
+                <div class="footer-accordion-content">
+                    <p>Na neoclássico, combinamos design atemporal e contemporâneo para transformar espaços. Descubra o
+                        novo clássico.</p>
+                </div>
+            </div>
 
-<script type="module" src="js/main.js"></script>
-    </body>
+            <div class="footer-accordion-item">
+                <div class="footer-accordion-header">Fale conosco</div>
+                <div class="footer-accordion-content">
+                    <p>Segunda a sexta das 8h às 18h<br>e sábado das 8h às 15h</p>
+                    <p>Whatsapp: +55 (00) 000000000<br>E-mail: contato@neoclassico.com.br</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-mobile-visible">
+            <div class="footer-social-mobile">
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+            <div class="footer-payment-mobile">
+                <img src="assets/formas-pagamento.png" alt="Meios de pagamento aceitos" loading="lazy">
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-col brand">
+                <img src="assets/logo.png" alt="Logo da Neoclássico">
+                <p>Na Neoclássico, combinamos design atemporal e contemporâneo para transformar espaços. Descubra o novo
+                    clássico.</p>
+                <p class="footer-subtitle">NOSSAS REDES</p>
+                <div class="footer-social-icons">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Sobre nós</h4>
+                <ul>
+                    <li><a href="#">Nossa história</a></li>
+                    <li><a href="#">Curadoria Exclusiva</a></li>
+                </ul>
+                <div class="footer-col-pagamento">
+                    <h4>Meios de pagamento</h4>
+                    <span class="pay-badge">
+                        <img src="assets/formas-pagamento.png" alt="Meios de pagamento aceitos">
+                    </span>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Atendimento</h4>
+                <p>Segunda a sexta das 8h às 18h<br>e sábado das 8h às 15h</p>
+                <p>Whatsapp: +55 (00) 000000000<br>E-mail: contato@neoclassico.com.br</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="footer-copy">© 2025, Neoclássico.</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
 </html>
