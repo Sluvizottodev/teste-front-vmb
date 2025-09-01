@@ -1,45 +1,77 @@
-# Teste de Seleção - Estágio em Desenvolvimento | Vambora Coders
+# 🛍️ Projeto Loja Virtual - Frontend
 
-Repositório do teste de seleção para **Estágio em Desenvolvimento** na **Vambora Coders**.  
-O objetivo deste teste é avaliar **lógica, organização, criatividade** e a capacidade de escrever **código limpo e escalável**.
-
----
-
-## Funcionalidades Principais
-
-- Layout totalmente **responsivo** (desktop e mobile).  
-- **Cards de produtos** com scroll horizontal minimalista.  
-- Seção **"Novo Clássico"** com imagem e texto descritivo.  
-- **Navbar** com menu mobile adaptável.  
-- **Footer** com newsletter, links institucionais e redes sociais.  
+Este projeto é uma **página fictícia de e-commerce** desenvolvida como desafio prático de HTML, CSS e JavaScript.  
+O objetivo foi aplicar conceitos de **estruturação semântica**, **responsividade** e **dinamismo com consumo de API (JSON)**, simulando uma loja real.
 
 ---
 
-## Scroll horizontal dos produtos
+## 📌 Funcionalidades Implementadas
 
-Os cards de produtos possuem **scroll horizontal oculto**, mantendo a interface limpa e minimalista.  
-Mesmo sem a barra visível, o scroll funciona corretamente em diferentes dispositivos.
+### ✅ Requisitos Obrigatórios
+1. **Cabeçalho (Header)**
+   - Logo fictício.
+   - Menu de navegação centralizado.
+   - Ícones de busca, login e carrinho (com hover effect).
+   - Header fixo no topo ao rolar a página.
 
-### Como testar
+2. **Banner Principal (Hero)**
+   - Imagem de destaque grande.
+   - Texto de chamada principal.
 
-#### Mobile real:
-- Abra a página em um dispositivo móvel.  
-- Deslize os cards com o dedo, o scroll horizontal funcionará normalmente.
+3. **Seção de Benefícios**
+   - 3 colunas com ícones + textos:
+     - Parcelamento.
+     - Desconto no PIX.
+     - Programa de pontos.
 
-#### Desktop (Chrome ou Edge) com DevTools:
-1. Abra o DevTools (`F12` ou `Ctrl+Shift+I`).  
-2. Clique no ícone **Toggle device toolbar** (tablet/celular).  
-3. Clique e arraste os cards com o mouse para testar o scroll horizontal.  
+4. **Seções de Produtos**
+   - **Novidades** → lista dinâmica com pelo menos 4 produtos.
+   - **Mais Vendidos** → lista dinâmica com pelo menos 4 produtos.
+   - Produtos carregados de um **arquivo JSON via fetch API**.
+   - Cards com imagem, nome, preço e botão **"Comprar"**.
+
+5. **Seção Institucional (Novo Clássico)**
+   - Texto fictício (lorem ipsum).
+   - Botão de call-to-action.
+
+6. **Seção Coleção**
+   - Outra lista de produtos (mínimo 4).
+
+7. **Rodapé (Footer)**
+   - Newsletter com campo de e-mail.
+   - Links de contato e redes sociais.
+   - Ícones de meios de pagamento.
 
 ---
 
-## Tecnologias Utilizadas
-
-- HTML5  
-- CSS3 (com **Media Queries** para responsividade)  
-- JavaScript  
+## ⚙️ Tecnologias Utilizadas
+- **HTML5**  
+- **CSS3**
+- **JavaScript (ES6+)** 
 
 ---
 
-## Estrutura do Projeto
-adicionar ainda...
+## 📂 Estrutura de Pastas
+```md
+📦 teste-front-vmb
+├── 📂 assets/        
+├── 📂 css/        
+├── 📂 js/ 
+│   ├── 📂 api/   
+│   ├── 📂 utils/     
+│   └── main.js     
+├── 📂 test/     
+├── index.html       
+└── README.md
+```
+
+---
+
+## ▶️ Como Rodar o Projeto
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/Sluvizottodev/teste-front-vmb.git
+
+
+
