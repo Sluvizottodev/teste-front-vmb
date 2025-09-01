@@ -1,20 +1,32 @@
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
 header .info {
     background-color: var(--cor-primaria);
     color: var(--texto-claro);
     text-align: center;
     padding: 0.25rem;
     font-weight: 500;
-    font-size: 0.75rem;
+    font-size: 16px;
     letter-spacing: 0.03rem;
 }
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 0.8rem 1rem;
     background: var(--texto-claro);
     position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
 }
 
 .logo {
@@ -28,12 +40,12 @@ header .info {
 }
 
 .icons {
-    position: absolute;
-    right: 1rem;
     display: flex;
     gap: 0.8rem;
     font-size: 1.5rem;
     color: var(--cor-primaria);
+    margin-left: auto; /* Isso garante que os ícones fiquem à direita */
+    padding: 0 1rem;
 }
 
 .icons a {
@@ -63,8 +75,8 @@ header .info {
 
 .menu ul li a {
     color: var(--texto-escuro);
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 0.75rem;
+    font-weight: 500;
     letter-spacing: 0.05rem;
     text-transform: uppercase; 
     text-decoration: none; 
@@ -74,3 +86,15 @@ header .info {
 .menu ul li a:hover {
     color: var(--cor-primaria);
 }
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: var(--cor-primaria);
+    cursor: pointer;
+}
+
+/* os icons estão dando bug ao diminuir a tela */
