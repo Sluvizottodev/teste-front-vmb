@@ -19,9 +19,9 @@ header .info {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
     align-items: center;
-    padding: 0.8rem 1rem;
+    padding: 2rem 1rem;
     background: var(--texto-claro);
     position: relative;
     box-sizing: border-box;
@@ -30,8 +30,12 @@ header .info {
 }
 
 .logo {
-    flex: 1;
+
     text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 .logo img {
@@ -44,8 +48,7 @@ header .info {
     gap: 0.8rem;
     font-size: 1.5rem;
     color: var(--cor-primaria);
-    margin-left: auto; /* Isso garante que os ícones fiquem à direita */
-    padding: 0 1rem;
+    margin-left: auto; 
 }
 
 .icons a {
@@ -95,6 +98,11 @@ header .info {
     line-height: 1;
     color: var(--cor-primaria);
     cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
 }
 
-/* os icons estão dando bug ao diminuir a tela */
+

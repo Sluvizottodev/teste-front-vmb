@@ -225,6 +225,48 @@
     }
 }
 
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: inline-flex;
+    }
+    
+    .logo {
+        position: static;
+        transform: none;
+        margin: 0 auto;
+    }
+    
+    .navbar {
+        justify-content: space-between;
+    }
+    
+    .icons {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        max-height: 4rem;
+    }
+    
+    .icons {
+        font-size: 1.2rem;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-height: 3rem;
+    }
+    
+    .icons {
+        font-size: 1rem;
+        gap: 0.4rem;
+    }
+}
+
 /* ===== 850px ===== */
 @media (max-width: 850px) {
     .novo-classico-container {
