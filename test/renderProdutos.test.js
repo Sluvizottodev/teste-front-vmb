@@ -1,35 +1,55 @@
-const { renderProdutos } = require("../js/utils/renderProdutos.js");
+import { renderProdutos } from '../js/utils/renderProdutos.js';
 
-describe("renderProdutos", () => {
+describe('renderProdutos', () => {
     let container;
 
     beforeEach(() => {
-        container = document.createElement("ul");
-        container.id = "lista-novidades";
+        container = document.createElement('div');
+        container.id = 'produtos-container';
         document.body.appendChild(container);
     });
 
     afterEach(() => {
-        document.body.innerHTML = "";
+        document.body.removeChild(container);
+        container = null;
     });
 
-    it("deve renderizar produtos corretamente", () => {
+    test('deve renderizar produtos corretamente no container', () => {
         const produtos = [
-            { title: "Camisa", price: 100, image: "camisa.png" }
+            { id: 1, title: 'Produto 1', price: 10.99, image: 'image1.jpg' },
+            { id: 2, title: 'Produto 2', price: 20.99, image: 'image2.jpg' }
         ];
 
-        renderProdutos("lista-novidades", produtos);
+        renderProdutos('produtos-container', produtos);
 
-        const li = container.querySelector(".produto-card");
-        expect(li).not.toBeNull();
-        expect(li.querySelector("h3").textContent).toBe("Camisa");
-        expect(li.querySelector("p").textContent).toBe("R$ 100.00");
-        expect(li.querySelector("img").src).toContain("camisa.png");
+        const items = container.querySelectorAll('.produto-card');
+        expect(items).toHaveLength(2);
+
+        expect(items[0].querySelector('h3').textContent).toBe('Produto 1');
+        expect(items[0].querySelector('p').textContent).toBe('R$ 10.99');
+        expect(items[0].querySelector('img').src).toContain('image1.jpg');
+        expect(items[0].querySelector('img').alt).toBe('Produto 1');
+        expect(items[0].querySelector('button').textContent).toBe('COMPRAR');
     });
 
-    it("deve limpar container antes de renderizar", () => {
-        container.innerHTML = "<li>Velho</li>";
-        renderProdutos("lista-novidades", []);
-        expect(container.innerHTML).toBe("");
+    test('deve limpar o container antes de renderizar', () => {
+        container.innerHTML = '<div>Conteúdo pré-existente</div>';
+        const produtos = [{ id: 1, title: 'Produto 1', price: 10.99, image: 'image1.jpg' }];
+
+        renderProdutos('produtos-container', produtos);
+
+        expect(container.querySelector('div')).toBeNull();
+        expect(container.querySelectorAll('.produto-card')).toHaveLength(1);
+    });
+
+    test('não deve renderizar se o container não existir', () => {
+        const produtos = [{ id: 1, title: 'Produto 1', price: 10.99, image: 'image1.jpg' }];
+        const originalConsoleLog = console.log;
+        console.log = jest.fn();
+
+        renderProdutos('container-inexistente', produtos);
+
+        expect(console.log).not.toHaveBeenCalled();
+        console.log = originalConsoleLog;
     });
 });
