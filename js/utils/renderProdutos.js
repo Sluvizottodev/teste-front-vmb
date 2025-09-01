@@ -1,5 +1,6 @@
-function renderProdutos(containerId, produtos) {
+export function renderProdutos(containerId, produtos) {
     const container = document.getElementById(containerId);
+    if (!container) return; 
     container.innerHTML = "";
 
     produtos.forEach(produto => {
@@ -24,5 +25,3 @@ function renderProdutos(containerId, produtos) {
         container.appendChild(item);
     });
 }
-
-module.exports = { renderProdutos };
