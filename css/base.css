@@ -6,6 +6,18 @@
     --fonte-serif: 'Hedvig Letters Serif', serif;
 }
 
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 body {
     background-color: var(--texto-claro);
     font-family: var(--fonte-sans);
@@ -13,6 +25,17 @@ body {
     line-height: 1.5;
     font-size: 1rem;
     margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+main {
+    margin-top: 15px;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
