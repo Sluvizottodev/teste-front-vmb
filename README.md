@@ -19,6 +19,13 @@ Os produtos são carregados dinamicamente a partir da Fake Store API:
 
 ---
 
+## 🌐 Deploy (GitHub Pages)
+
+A aplicação está disponível online através do GitHub Pages:
+👉 [https://sluvizottodev.github.io/teste-front-vmb](https://sluvizottodev.github.io/teste-front-vmb)
+
+---
+
 ## 📌 Funcionalidades Implementadas
 
 ### ✅ Requisitos Obrigatórios
@@ -101,7 +108,6 @@ Os produtos são carregados dinamicamente a partir da Fake Store API:
    ```
 
 2. **Entre na pasta do projeto**
-
 
 3. **Abra o arquivo `index.html` no navegador**
 
