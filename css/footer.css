@@ -1,135 +1,235 @@
 footer {
-    background: #f6fbfd;
+    background: var(--texto-claro);
     color: var(--texto-escuro);
-    padding: 1.5rem 0 1rem;
-    font-size: 0.85rem;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
-    max-width: 1200px;
-    margin: 0 auto 1rem auto;
-    padding: 0 1rem;
-    flex-wrap: wrap;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
 }
 
 .newsletter {
-    flex: 2;
-    min-width: 200px;
-    background: #fff;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    box-shadow: 0 2px 8px rgba(97,169,204,0.06);
-    margin-bottom: 1rem;
+    max-width: 1200px;
+    margin: 0 auto 1rem auto;
+    padding: 0 1rem;
+    text-align: left;
+    background: transparent;
 }
 
-.newsletter h3 {
-    font-size: 1rem;
-    color: var(--cor-primaria);
-    margin-bottom: 0.25rem;
+.newsletter-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nl-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.nl-title h3 {
+    font-size: 0.95rem;
+    color: var(--texto-escuro);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    margin: 0;
+    padding: 0;
     font-family: var(--fonte-serif);
 }
 
-.newsletter p {
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
+.nl-title p {
+    font-size: 0.8rem;
+    margin: 0.25rem 0 0 0;
+    opacity: 0.8;
 }
 
 .newsletter form {
     display: flex;
-    gap: 0.25rem;
-    flex-wrap: wrap;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
 }
 
-.newsletter input[type="text"],
-.newsletter input[type="email"] {
-    flex: 1 1 100px;
-    padding: 0.4rem 0.6rem;
-    border: 1px solid #b0c3cf;
-    border-radius: 0.5rem;
+.newsletter input {
+    width: 220px;
+    height: 38px;
+    padding: 0 0.75rem;
+    border: 1px solid #c9d6df;
+    border-radius: 0.25rem;
     font-size: 0.85rem;
-    background: #f6fbfd;
-    font-family: var(--fonte-sans);
+    background: #fff;
 }
 
-.btn-footer {
-    padding: 0.4rem 0.8rem;
-    border-radius: 0.5rem;
-    background: var(--cor-primaria);
-    color: #fff;
-    border: none;
-    cursor: pointer;
+footer hr {
+    max-width: 1200px;
+    margin: 1rem auto;
+    border: 0;
+    height: 1px;
+    background: #000;
+    opacity: 0.12;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+}
+
+footer h4 {
+    color: var(--texto-escuro);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
     font-weight: 600;
+    margin: 0 0 0.5rem 0;
     font-size: 0.85rem;
-    transition: background 0.2s;
-}
-
-.btn-footer:hover {
-    background: #3d7ea6;
-}
-
-.footer-links {
-    flex: 3;
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-
-.links {
-    min-width: 120px;
-}
-
-.links h4 {
-    color: var(--cor-primaria);
-    font-size: 0.9rem;
-    margin-bottom: 0.25rem;
     font-family: var(--fonte-serif);
 }
 
-.links ul li a {
-    color: var(--texto-escuro);
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li a {
     text-decoration: none;
-    font-size: 0.85rem;
+    color: var(--texto-escuro);
+    font-size: 0.8rem;
     display: block;
-    padding: 0.15rem 0;
+    padding: 0.25rem 0;
     transition: color 0.2s;
 }
 
-.links ul li a:hover {
+.footer-col ul li a:hover {
     color: var(--cor-primaria);
 }
 
-.redes-sociais h4 {
-    color: var(--cor-primaria);
+.footer-col.brand img {
+    max-width: 160px;
+    margin-bottom: 0.75rem;
+}
+
+.footer-col.brand p {
+    margin: 0 0 0.75rem 0;
+    max-width: 260px;
+    line-height: 1.5;
     font-size: 0.85rem;
-    margin-bottom: 0.2rem;
-    font-family: var(--fonte-serif);
+}
+
+.footer-subtitle {
+    margin: 0.75rem 0 0.5rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    opacity: 0.8;
 }
 
 .footer-social-icons {
     display: flex;
-    gap: 0.5rem;
-    margin-top: 0.2rem;
+    gap: 0.75rem;
 }
 
 .footer-social-icons a {
+    font-size: 1rem;
     color: var(--cor-primaria);
-    font-size: 1.2rem;
-    transition: color 0.2s;
+    transition: opacity 0.2s;
 }
 
 .footer-social-icons a:hover {
-    color: #3d7ea6;
+    opacity: 0.8;
+}
+
+.footer-col-pagamento {
+    margin-top: 1rem;
+}
+
+.footer-col-pagamento .pay-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background: var(--cor-primaria);
+}
+
+.footer-col-pagamento img {
+    display: block;
+    max-width: 190px;
+    height: auto;
 }
 
 .footer-copy {
-    font-size: 0.75rem;
-    margin-top: 0.5rem;
+    max-width: 1200px;
+    margin: 0.75rem auto 0;
+    padding: 0 1rem;
+    font-size: 0.8rem;
     color: #8296a1;
-    letter-spacing: 0.02em;
+    text-align: start;
+}
+
+/* Sistema de Abas para Mobile */
+.footer-mobile-accordion {
+    display: none;
+}
+
+.footer-accordion-item {
+    border-bottom: 1px solid #e9eef2;
+}
+
+.footer-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--texto-escuro);
+}
+
+.footer-accordion-header::after {
+    content: '+';
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-accordion-item.active .footer-accordion-header::after {
+    content: '-';
+}
+
+.footer-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.footer-accordion-item.active .footer-accordion-content {
+    max-height: 500px;
+}
+
+.footer-mobile-visible {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
     text-align: center;
+}
+
+.footer-social-mobile {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.footer-social-mobile a {
+    font-size: 1.2rem;
+    color: var(--cor-primaria);
+}
+
+.footer-payment-mobile img {
+    max-width: 190px;
+    height: auto;
+    background-color: var(--cor-primaria);
 }
